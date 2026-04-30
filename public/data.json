@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Complete Web Development Bootcamp",
-    "instructor": "John Doe",
+    "instructor": "Afazur Rahman",
     "duration": "20 hours",
     "rating": 4.8,
     "level": "Beginner",
@@ -13,7 +13,7 @@
   {
     "id": 2,
     "title": "Python for Beginners",
-    "instructor": "Jane Smith",
+    "instructor": "Jankar Mahbub",
     "duration": "15 hours",
     "rating": 4.7,
     "level": "Beginner",
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "title": "UI/UX Design Masterclass",
-    "instructor": "Emily Johnson",
+    "instructor": "Junayed Siddik",
     "duration": "18 hours",
     "rating": 4.6,
     "level": "Intermediate",
@@ -35,7 +35,7 @@
   {
     "id": 4,
     "title": "Digital Marketing Essentials",
-    "instructor": "Michael Brown",
+    "instructor": "Ratul Khan",
     "duration": "12 hours",
     "rating": 4.5,
     "level": "Beginner",
@@ -46,7 +46,7 @@
   {
     "id": 5,
     "title": "React.js Complete Guide",
-    "instructor": "David Wilson",
+    "instructor": "Sumit Saha",
     "duration": "22 hours",
     "rating": 4.9,
     "level": "Advanced",
@@ -57,7 +57,7 @@
   {
     "id": 6,
     "title": "Graphic Design Fundamentals",
-    "instructor": "Sarah Lee",
+    "instructor": "Ayman Chy",
     "duration": "14 hours",
     "rating": 4.4,
     "level": "Beginner",
@@ -68,7 +68,7 @@
   {
     "id": 7,
     "title": "Data Science with Python",
-    "instructor": "Robert Taylor",
+    "instructor": "Fazle Rabbi",
     "duration": "25 hours",
     "rating": 4.8,
     "level": "Intermediate",
@@ -79,7 +79,7 @@
   {
     "id": 8,
     "title": "Freelancing Career Guide",
-    "instructor": "Anna Davis",
+    "instructor": "Safiul Hasan",
     "duration": "10 hours",
     "rating": 4.3,
     "level": "Beginner",
