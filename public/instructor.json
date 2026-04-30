@@ -9,6 +9,9 @@
     "experience": "5 years",
     "achievement": "Trained 5,000+ students in web technologies",
     "rating": 4.8,
+    "bio": "Passionate web developer and mentor helping students build real-world projects.",
+    "email": "afazur@example.com",
+    "contact": "01887-908070",
     "image": "https://i.pravatar.cc/150?img=11"
   },
   {
@@ -21,6 +24,9 @@
     "experience": "7 years",
     "achievement": "Top-rated programming instructor in Bangladesh",
     "rating": 4.9,
+    "bio": "Dedicated to making programming easy and accessible for everyone.",
+    "email": "jankar@example.com",
+     "contact": "01887-908070",
     "image": "https://i.pravatar.cc/150?img=12"
   },
   {
@@ -33,6 +39,9 @@
     "experience": "4 years",
     "achievement": "Worked with 100+ international design projects",
     "rating": 4.7,
+    "bio": "Creative designer focused on user-friendly and modern UI/UX solutions.",
+    "email": "ratul@example.com",
+    "contact": "01887-908070",
     "image": "https://i.pravatar.cc/150?img=13"
   },
   {
@@ -44,6 +53,9 @@
     "experience": "6 years",
     "achievement": "Data analyst for multiple global companies",
     "rating": 4.8,
+    "bio": "Helping learners turn data into insights and build ML models.",
+    "email": "rabbi@example.com",
+     "contact": "01887-908070",
     "image": "https://i.pravatar.cc/150?img=14"
   },
   {
@@ -55,6 +67,9 @@
     "experience": "5 years",
     "achievement": "Helped 200+ businesses grow online",
     "rating": 4.6,
+    "bio": "Digital marketing expert focused on growth strategies and branding.",
+    "email": "safiul@example.com",
+    "contact": "01887-908070",
     "image": "https://i.pravatar.cc/150?img=15"
   }
 ]
