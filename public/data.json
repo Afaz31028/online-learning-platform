@@ -29,7 +29,7 @@
     "rating": 4.6,
     "level": "Intermediate",
     "description": "Learn modern UI/UX design principles and tools.",
-    "image": "https://via.placeholder.com/300x200?text=UI+UX",
+    "image": "https://i.ibb.co.com/jv7z4dzB/c-3.jpg",
     "category": "Design"
   },
   {
@@ -40,7 +40,7 @@
     "rating": 4.5,
     "level": "Beginner",
     "description": "Master SEO, social media marketing, and online ads.",
-    "image": "https://via.placeholder.com/300x200?text=Marketing",
+    "image": "https://i.ibb.co.com/HTcbf9gN/c-4.jpg",
     "category": "Marketing"
   },
   {
@@ -51,7 +51,7 @@
     "rating": 4.9,
     "level": "Advanced",
     "description": "Build modern web applications using React.js.",
-    "image": "https://via.placeholder.com/300x200?text=React",
+    "image": "https://i.ibb.co.com/ks0PhD0d/c-5.jpg",
     "category": "Development"
   },
   {
@@ -62,7 +62,7 @@
     "rating": 4.4,
     "level": "Beginner",
     "description": "Learn design basics, typography, and branding.",
-    "image": "https://via.placeholder.com/300x200?text=Design",
+    "image": "https://i.ibb.co.com/Q3wpFMnk/c-6.jpg",
     "category": "Design"
   },
   {
@@ -73,7 +73,7 @@
     "rating": 4.8,
     "level": "Intermediate",
     "description": "Analyze data and build machine learning models using Python.",
-    "image": "https://via.placeholder.com/300x200?text=Data+Science",
+    "image": "https://i.ibb.co.com/hx4yjLb4/c-7.jpg",
     "category": "Data Science"
   },
   {
@@ -84,7 +84,7 @@
     "rating": 4.3,
     "level": "Beginner",
     "description": "Learn how to start and grow a successful freelancing career.",
-    "image": "https://via.placeholder.com/300x200?text=Freelancing",
+    "image": "https://i.ibb.co.com/YTTS2pzN/c-8.jpg",
     "category": "Career"
   }
 ]
