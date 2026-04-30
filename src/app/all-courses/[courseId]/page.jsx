@@ -32,10 +32,10 @@ const IndividualCourse = async ({ params }) => {
           <div className="flex flex-wrap text-md font-semibold mt-3 text-gray-300">
             <p>{description}</p>
           </div>
-          <p className="text-lg font-semibold mt-5"><span className="rounded-xl px-3 p-1 bg-amber-400 text-black">Instructor: {instructor}</span></p>
-          <p className="text-lg font-semibold mt-5"><span className="rounded px-3 p-1 bg-blue-300 text-black">Duration: {duration}</span></p>
-          <p className="text-lg font-semibold mt-5"><span className="rounded px-3 p-1 bg-emerald-300 text-black">Level: {level}</span></p>
-          <p className="text-lg font-semibold mt-5"><span className="rounded-xl px-3 p-1 bg-lime-400 text-black">Category: {category}</span></p>
+          <p className="text-md font-semibold mt-5"><span className="rounded-xl px-3 p-1 bg-amber-400 text-black">Instructor: {instructor}</span></p>
+          <p className="text-md font-semibold mt-5"><span className="rounded px-3 p-1 bg-blue-300 text-black">Duration: {duration}</span></p>
+          <p className="text-md font-semibold mt-5"><span className="rounded px-3 p-1 bg-emerald-300 text-black">Level: {level}</span></p>
+          <p className="text-md font-semibold mt-5"><span className="rounded-xl px-3 p-1 bg-lime-400 text-black">Category: {category}</span></p>
           <div className="mt-8">
             <button className="btn">Enroll Now</button>
           </div>

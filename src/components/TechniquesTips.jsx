@@ -5,7 +5,7 @@ const TechniquesTips = () => {
   return (
     <div className="mt-10">
         <h1 className="text-3xl font-bold text-center mb-10"><span className="border-b-2 pb-2">Study Techniques & Time Management Tips</span></h1>
-      <div className="grid grid-cols-2 max-w-5xl mx-auto">
+      <div className="grid grid-cols-2  max-w-5xl mx-auto place-items-center">
         <div className="card w-96 bg-[#DADBDD] shadow-sm py-5">
           <div className="card-body">
             <h1 className="text-xl font-bold">Some Important Study Techniques</h1>
@@ -37,7 +37,7 @@ const TechniquesTips = () => {
             </ul>
           </div>
         </div>
-        <div className="card w-96 bg-[#DADBDD] shadow-sm">
+        <div className="card w-96 bg-[#DADBDD] shadow-sm py-5">
           <div className="card-body">
             <h1 className="text-xl font-bold">Time Management Tips</h1>
             <ul className="mt-4 flex flex-col gap-2 text-xs">

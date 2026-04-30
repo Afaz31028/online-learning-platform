@@ -11,10 +11,11 @@ const PopularInstructor = async() => {
         <div className="grid grid-cols-3 gap-8 mt-10 place-items-center container mx-auto">
             {
                 instructors?.map(instructor=> (<div key={instructor.id} className="card bg-base-100 w-96 shadow-sm">
-        <figure>
+        <figure className="relative w-100 h-80">
           <Image
-            src={img1}
-            alt="Shoes"
+            src={instructor.image}
+            alt="Shoes" fill
+           className="object-cover"
           />
         </figure>
         <div className="card-body">
