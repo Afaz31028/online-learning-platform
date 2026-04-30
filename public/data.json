@@ -7,7 +7,7 @@
     "rating": 4.8,
     "level": "Beginner",
     "description": "Learn full-stack web development from scratch.",
-    "image": "https://i.ibb.co.com/BKcTV4W7/c-1.jpg",
+    "image": "https://i.ibb.co.com/xN0yFVT/c-1.jpg",
     "category": "Development"
   },
   {
@@ -18,7 +18,7 @@
     "rating": 4.7,
     "level": "Beginner",
     "description": "Start programming with Python from basics to advanced concepts.",
-    "image": "https://i.ibb.co.com/35nsd5DZ/c-2.jpg",
+    "image": "https://i.ibb.co.com/Mkw4bxfw/c-2.jpg",
     "category": "Programming"
   },
   {
@@ -29,7 +29,7 @@
     "rating": 4.6,
     "level": "Intermediate",
     "description": "Learn modern UI/UX design principles and tools.",
-    "image": "https://i.ibb.co.com/jv7z4dzB/c-3.jpg",
+    "image": "https://i.ibb.co.com/SwgkdnJV/c-3.jpg",
     "category": "Design"
   },
   {
@@ -40,7 +40,7 @@
     "rating": 4.5,
     "level": "Beginner",
     "description": "Master SEO, social media marketing, and online ads.",
-    "image": "https://i.ibb.co.com/HTcbf9gN/c-4.jpg",
+    "image": "https://i.ibb.co.com/h1dNc2m0/c-4.jpg",
     "category": "Marketing"
   },
   {
@@ -51,7 +51,7 @@
     "rating": 4.9,
     "level": "Advanced",
     "description": "Build modern web applications using React.js.",
-    "image": "https://i.ibb.co.com/ks0PhD0d/c-5.jpg",
+    "image": "https://i.ibb.co.com/20fn0Bks/c-5.jpg",
     "category": "Development"
   },
   {
@@ -62,7 +62,7 @@
     "rating": 4.4,
     "level": "Beginner",
     "description": "Learn design basics, typography, and branding.",
-    "image": "https://i.ibb.co.com/Q3wpFMnk/c-6.jpg",
+    "image": "https://i.ibb.co.com/0jsbsRZY/c-6.jpg",
     "category": "Design"
   },
   {
@@ -73,7 +73,7 @@
     "rating": 4.8,
     "level": "Intermediate",
     "description": "Analyze data and build machine learning models using Python.",
-    "image": "https://i.ibb.co.com/hx4yjLb4/c-7.jpg",
+    "image": "https://i.ibb.co.com/G4LpWZ6L/c-7.jpg",
     "category": "Data Science"
   },
   {
@@ -84,7 +84,7 @@
     "rating": 4.3,
     "level": "Beginner",
     "description": "Learn how to start and grow a successful freelancing career.",
-    "image": "https://i.ibb.co.com/YTTS2pzN/c-8.jpg",
+    "image": "https://i.ibb.co.com/zH5HL8Wc/c-8.jpg",
     "category": "Career"
   }
 ]

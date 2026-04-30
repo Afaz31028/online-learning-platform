@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React from 'react';
 
 const CourseCard = ({course}) => {
-    const {image, title,instructor, rating} =course;
+    const {image, title,instructor, rating} =course; 
     return (
         <Card>
             <div>
