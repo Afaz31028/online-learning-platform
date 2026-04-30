@@ -1,10 +1,8 @@
-import React from "react";
+import React, { cache } from "react";
 import CourseCard from "./CourseCard";
 
 const TopRatedCourses = async () => {
-  const res = await fetch(
-    "https://online-learning-platform-psi-peach.vercel.app/data.json",
-  );
+  const res = await fetch("https://online-learning-platform-psi-peach.vercel.app/data.json",{cache: "no-store"});
   const courses = await res.json();
   const topCourses = courses.slice(0, 3);
   return (

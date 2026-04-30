@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "Complete Web Development Bootcamp",
+    "title": "Complete Web Development",
     "instructor": "Afazur Rahman",
     "duration": "20 hours",
     "rating": 4.8,
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "title": "UI/UX Design Masterclass",
-    "instructor": "Junayed Siddik",
+    "instructor": "Ratul Khan",
     "duration": "18 hours",
     "rating": 4.6,
     "level": "Intermediate",
@@ -35,7 +35,7 @@
   {
     "id": 4,
     "title": "Digital Marketing Essentials",
-    "instructor": "Ratul Khan",
+    "instructor": "Safiul Hasan",
     "duration": "12 hours",
     "rating": 4.5,
     "level": "Beginner",
@@ -46,7 +46,7 @@
   {
     "id": 5,
     "title": "React.js Complete Guide",
-    "instructor": "Sumit Saha",
+    "instructor": "Afazur Rahman",
     "duration": "22 hours",
     "rating": 4.9,
     "level": "Advanced",
@@ -57,7 +57,7 @@
   {
     "id": 6,
     "title": "Graphic Design Fundamentals",
-    "instructor": "Ayman Chy",
+    "instructor": "Ratul Khan",
     "duration": "14 hours",
     "rating": 4.4,
     "level": "Beginner",
@@ -79,7 +79,7 @@
   {
     "id": 8,
     "title": "Freelancing Career Guide",
-    "instructor": "Safiul Hasan",
+    "instructor": "Jankar Mahbub",
     "duration": "10 hours",
     "rating": 4.3,
     "level": "Beginner",

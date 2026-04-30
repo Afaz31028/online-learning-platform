@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "name": "Afazur Rahman",
+    "courses": [
+      "Complete Web Development",
+      "React.js Complete Guide"
+    ],
+    "experience": "5 years",
+    "achievement": "Trained 5,000+ students in web technologies",
+    "rating": 4.8,
+    "image": "https://i.pravatar.cc/150?img=11"
+  },
+  {
+    "id": 2,
+    "name": "Jankar Mahbub",
+    "courses": [
+      "Python for Beginners",
+      "Freelancing Career Guide"
+    ],
+    "experience": "7 years",
+    "achievement": "Top-rated programming instructor in Bangladesh",
+    "rating": 4.9,
+    "image": "https://i.pravatar.cc/150?img=12"
+  },
+  {
+    "id": 3,
+    "name": "Ratul Khan",
+    "courses": [
+      "UI/UX Design Masterclass",
+      "Graphic Design Fundamentals"
+    ],
+    "experience": "4 years",
+    "achievement": "Worked with 100+ international design projects",
+    "rating": 4.7,
+    "image": "https://i.pravatar.cc/150?img=13"
+  },
+  {
+    "id": 4,
+    "name": "Fazle Rabbi",
+    "courses": [
+      "Data Science with Python"
+    ],
+    "experience": "6 years",
+    "achievement": "Data analyst for multiple global companies",
+    "rating": 4.8,
+    "image": "https://i.pravatar.cc/150?img=14"
+  },
+  {
+    "id": 5,
+    "name": "Safiul Hasan",
+    "courses": [
+      "Digital Marketing Essentials"
+    ],
+    "experience": "5 years",
+    "achievement": "Helped 200+ businesses grow online",
+    "rating": 4.6,
+    "image": "https://i.pravatar.cc/150?img=15"
+  }
+]

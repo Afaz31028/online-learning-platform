@@ -2,7 +2,7 @@ import CourseCard from '@/components/CourseCard';
 import React from 'react';
 
 const AllCoursesPage = async() => {
-    const res = await fetch("https://online-learning-platform-psi-peach.vercel.app/data.json",);
+    const res = await fetch("https://online-learning-platform-psi-peach.vercel.app/data.json",{cache: "no-store"});
     const courses = await res.json();
     return (
         <div className='max-w-7xl mx-auto mb-10'>
