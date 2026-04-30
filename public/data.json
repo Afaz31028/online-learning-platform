@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "title": "Complete Web Development Bootcamp",
+    "instructor": "John Doe",
+    "duration": "20 hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "description": "Learn full-stack web development from scratch.",
+    "image": "https://i.postimg.cc/example-course1.png",
+    "category": "Development"
+  },
+  {
+    "id": 2,
+    "title": "Python for Beginners",
+    "instructor": "Jane Smith",
+    "duration": "15 hours",
+    "rating": 4.7,
+    "level": "Beginner",
+    "description": "Start programming with Python from basics to advanced concepts.",
+    "image": "https://i.postimg.cc/example-course2.png",
+    "category": "Programming"
+  },
+  {
+    "id": 3,
+    "title": "UI/UX Design Masterclass",
+    "instructor": "Emily Johnson",
+    "duration": "18 hours",
+    "rating": 4.6,
+    "level": "Intermediate",
+    "description": "Learn modern UI/UX design principles and tools.",
+    "image": "https://i.postimg.cc/example-course3.png",
+    "category": "Design"
+  },
+  {
+    "id": 4,
+    "title": "Digital Marketing Essentials",
+    "instructor": "Michael Brown",
+    "duration": "12 hours",
+    "rating": 4.5,
+    "level": "Beginner",
+    "description": "Master SEO, social media marketing, and online ads.",
+    "image": "https://i.postimg.cc/example-course4.png",
+    "category": "Marketing"
+  },
+  {
+    "id": 5,
+    "title": "React.js Complete Guide",
+    "instructor": "David Wilson",
+    "duration": "22 hours",
+    "rating": 4.9,
+    "level": "Advanced",
+    "description": "Build modern web applications using React.js.",
+    "image": "https://i.postimg.cc/example-course5.png",
+    "category": "Development"
+  },
+  {
+    "id": 6,
+    "title": "Graphic Design Fundamentals",
+    "instructor": "Sarah Lee",
+    "duration": "14 hours",
+    "rating": 4.4,
+    "level": "Beginner",
+    "description": "Learn design basics, typography, and branding.",
+    "image": "https://i.postimg.cc/example-course6.png",
+    "category": "Design"
+  },
+  {
+    "id": 7,
+    "title": "Data Science with Python",
+    "instructor": "Robert Taylor",
+    "duration": "25 hours",
+    "rating": 4.8,
+    "level": "Intermediate",
+    "description": "Analyze data and build machine learning models using Python.",
+    "image": "https://i.postimg.cc/example-course7.png",
+    "category": "Data Science"
+  },
+  {
+    "id": 8,
+    "title": "Freelancing Career Guide",
+    "instructor": "Anna Davis",
+    "duration": "10 hours",
+    "rating": 4.3,
+    "level": "Beginner",
+    "description": "Learn how to start and grow a successful freelancing career.",
+    "image": "https://i.postimg.cc/example-course8.png",
+    "category": "Career"
+  }
+]
