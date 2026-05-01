@@ -5,6 +5,7 @@ import React from "react";
 import { authClient } from "@/lib/auth-client"
 import Image from "next/image";
 import img from '@/assests/c-1.jpg'
+import { toast } from "react-toastify";
 
 const Navbar = () => {
   const pathName = usePathname();
@@ -18,13 +19,14 @@ const Navbar = () => {
     const name = curUser?.name;
     const image = curUser?.image;
 
-    console.log(name)
+    // console.log(name)
 
     if (isPending) {
       return <div>Loading...</div>;
     }
 
     const handleLogout=()=>{
+        toast.success("You Logged Out!", {theme:"dark", autoClose:3000})
         authClient.signOut();
     }
   

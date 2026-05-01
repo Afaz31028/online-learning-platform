@@ -1,10 +1,11 @@
 'use client'
 import { authClient } from '@/lib/auth-client';
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+import { redirect } from 'next/navigation';
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const SignInPage = () => {
-  const router= useRouter();
   
     const onSubmit = async(e) => {
         e.preventDefault();
@@ -18,7 +19,14 @@ const SignInPage = () => {
             password
         });
         if(!error){
-            router.push('/')
+            toast.success("Successfully Logged In!",{
+              theme: "dark",
+              autoClose: 3000,
+            });
+            redirect('/');
+        }
+        else{
+          toast.error("Please, Register before Login", {autoClose:3000, theme: "dark"})
         }
   };
 
@@ -49,6 +57,7 @@ const SignInPage = () => {
                         Login with Google
                     </button>
             </div>
+            <p className='mt-10 text-center'>Don't have an account? <Link className='text-lg font-bold text-red-700' href={"/signup"}>Register</Link></p>
           </div>
 
         </div>

@@ -1,5 +1,6 @@
 'use client'
 import { authClient } from "@/lib/auth-client";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
 
@@ -62,6 +63,7 @@ const SignUpPage = () => {
                         Sign Up with Google
                     </button>
             </div>
+            <p className='mt-10 text-center'>Already have an account? <Link className='text-lg font-bold text-red-700' href={"/signin"}>Sign In</Link></p>
           </div>
 
         </div>

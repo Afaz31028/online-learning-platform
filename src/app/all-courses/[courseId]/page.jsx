@@ -13,7 +13,7 @@ const IndividualCourse = async ({ params }) => {
   const courses = await res.json();
 
   const filterdCourse = courses.find((course) => course.id == courseId);
-  const {id, title, rating, instructor, duration, level, description, category, image}= filterdCourse;
+  const {title, instructor, duration, level, description, category, image}= filterdCourse;
   // console.log(filterdCourse.title)
   return (
     <div>
