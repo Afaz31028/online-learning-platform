@@ -33,13 +33,12 @@ const InstructorPage = async ({ params }) => {
       </h1>
       <div className="flex gap-3">
         <div className=" bg-gray-200 p-5">
-          <div>
+          <div className="relative w-80 h-70">
             <Image
-              className=""
+              className="object-center"
               src={image}
               alt={name}
-              width={500}
-              height={500}
+              fill
             ></Image>
           </div>
           <div className="">

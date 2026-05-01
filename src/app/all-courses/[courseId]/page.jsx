@@ -21,7 +21,7 @@ const IndividualCourse = async ({ params }) => {
       <div className=" max-w-180 lg:card-side bg-[#29465B] text-white shadow-sm flex gap-10 p-5 rounded-xl">
         <figure className="relative w-80 h-100">
           <Image
-            src={img1}
+            src={image}
             alt={title}
             fill
             className="object-cover rounded-xl"

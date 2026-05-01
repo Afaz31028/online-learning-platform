@@ -2,10 +2,32 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import { authClient } from "@/lib/auth-client"
+import Image from "next/image";
+import img from '@/assests/c-1.jpg'
 
 const Navbar = () => {
   const pathName = usePathname();
-  // console.log("corrent path:",pathName)
+
+  const { 
+        data: session, 
+        isPending,
+    } = authClient.useSession() 
+
+    const curUser=session?.user;
+    const name = curUser?.name;
+    const image = curUser?.image;
+
+    console.log(name)
+
+    if (isPending) {
+      return <div>Loading...</div>;
+    }
+
+    const handleLogout=()=>{
+        authClient.signOut();
+    }
+  
 
   return (
     <div className="max-lg:collapse bg-base-200 shadow-sm w-full rounded-md px-15 py-2">
@@ -48,8 +70,18 @@ const Navbar = () => {
         </ul>
         </div>
         <div className="navbar-end flex gap-5">
-          <Link href={"/signin"}><button className="btn btn-primary">Sign In</button></Link>
-          <Link href={"/signup"}><button className="btn btn-primary">Sign Up</button></Link>
+          {
+            curUser ? 
+            <div className="flex gap-5 items-center">
+              <h1 className="text-lg font-semibold">{curUser?.name || "User"}</h1>
+              <button onClick={handleLogout} className="btn text-white bg-red-500">Sign Out</button>
+            </div> 
+            : 
+            <div className="flex gap-5"> 
+              <Link href={"/signin"}><button className="btn btn-primary">Sign In</button></Link>
+              <Link href={"/signup"}><button className="btn btn-primary">Sign Up</button></Link>
+            </div>
+          }
         </div>
       </div>
       <div className="collapse-content lg:hidden z-1">
