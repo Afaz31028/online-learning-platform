@@ -31,15 +31,15 @@ const InstructorPage = async ({ params }) => {
       <h1 className="text-3xl font-bold text-center mt-5 mb-10">
         <span className="border-b-2 pb-2">Instructor Profile</span>
       </h1>
-      <div className="flex gap-5">
+      <div className="flex gap-3">
         <div className=" bg-gray-200 p-5">
           <div>
             <Image
               className=""
-              src={img1}
+              src={image}
               alt={name}
-              width={400}
-              height={400}
+              width={500}
+              height={500}
             ></Image>
           </div>
           <div className="">
@@ -47,20 +47,23 @@ const InstructorPage = async ({ params }) => {
             <p className="mt-3 text-lg font-semibold text-blue-700">
               Experience: {experience}+
             </p>
+            <p className="mt-3 text-lg font-semibold">Rating: {rating}</p>
           </div>
         </div>
         <div className="bg-gray-200 p-5">
-            <h1><span className="border-b mb-5">Personal Info</span></h1>
-            <p>{bio}</p>
-            <p>{achievement}</p>
-            <p>Taken Courses:</p>
+            <p><span className="border-b text-lg font-semibold">Achievemnets:</span></p>
+            <p className="text-lg font-semibold">{achievement}</p>
+            <p className="mt-5"><span className="border-b text-lg font-semibold">Objectives:</span></p>
+            <p className="text-lg font-semibold">{bio}</p>
+            <p className="mt-5"><span className="border-b text-lg font-semibold">Taken Courses:</span></p>
             <div>
-                {
-                    courses.map((course,index)=> <p key={index}>{course}</p>)
-                }
+                  {
+                    courses.map((course,index)=> <li className="text-lg font-semibold" key={index}>{course}</li>)
+                  }
             </div>
-            <p>{email}</p>
-            <p>{contact}</p>
+            <p className="mt-5"><span className="border-b text-lg font-semibold">Contact:</span></p>
+            <p className="text-lg font-semibold">{email}</p>
+            <p className="text-lg font-semibold">{contact}</p>
         </div>
       </div>
     </div>

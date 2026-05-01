@@ -12,7 +12,7 @@
     "bio": "Passionate web developer and mentor helping students build real-world projects.",
     "email": "afazur@example.com",
     "contact": "01887-908070",
-    "image": "https://i.ibb.co.com/WN70w4Vf/afaz.jpg"
+    "image": "https://res.cloudinary.com/dpi4wnosa/image/upload/v1777631379/afaz_mozpjn.jpg"
   },
   {
     "id": 2,
@@ -27,7 +27,7 @@
     "bio": "Dedicated to making programming easy and accessible for everyone.",
     "email": "jankar@example.com",
      "contact": "01887-908070",
-    "image": "https://i.ibb.co.com/LdrMJ4bg/Jankar.jpg"
+    "image": "https://res.cloudinary.com/dpi4wnosa/image/upload/v1777631520/Jankar_xjgpju.jpg"
   },
   {
     "id": 3,
@@ -42,7 +42,7 @@
     "bio": "Creative designer focused on user-friendly and modern UI/UX solutions.",
     "email": "ratul@example.com",
     "contact": "01887-908070",
-    "image": "https://i.ibb.co.com/KxmJVS9C/Ratul.jpg"
+    "image": "https://res.cloudinary.com/dpi4wnosa/image/upload/v1777631605/Ratul_dk1ae9.jpg"
   },
   {
     "id": 4,
@@ -56,7 +56,7 @@
     "bio": "Helping learners turn data into insights and build ML models.",
     "email": "rabbi@example.com",
      "contact": "01887-908070",
-    "image": "https://i.ibb.co.com/Pvgc5M2t/rabbi.jpg"
+    "image": "https://res.cloudinary.com/dpi4wnosa/image/upload/v1777631615/download_dvtn14.jpg"
   },
   {
     "id": 5,
@@ -70,6 +70,6 @@
     "bio": "Digital marketing expert focused on growth strategies and branding.",
     "email": "safiul@example.com",
     "contact": "01887-908070",
-    "image": "https://i.ibb.co.com/xK7c21Tt/471645030-28062509950061213-1536655858774138324-n.jpg"
+    "image": "https://res.cloudinary.com/dpi4wnosa/image/upload/v1777631623/471645030_28062509950061213_1536655858774138324_n_u5gy6e.jpg"
   }
 ]
