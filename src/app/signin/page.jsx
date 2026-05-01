@@ -15,13 +15,13 @@ const SignInPage = () => {
             email,
             password
         });
-        if(!error){
-            router.push('/')
-        }
+        // if(!error){
+        //     router.push('/')
+        // }
   };
 
     return (
-    <div className="px-30 py-20">
+    <div className="px-30 pt-25 pb-65">
       <h1 className="text-center text-2xl font-bold text-green-700">Login Your Account</h1>
 
       <div className="flex justify-center mt-4">
@@ -30,10 +30,10 @@ const SignInPage = () => {
             <fieldset className="fieldset">
 
               <label className="label font-bold text-neutral">Email</label>
-              <input name="email" type="email" required className="input" />
+              <input name="email" type="email" required className="input" placeholder='Enter Your Verified Email' />
 
               <label className="label font-bold text-neutral">Password</label>
-              <input name="password" type="password" required className="input" />
+              <input name="password" type="password" required className="input" placeholder='Enter Correct Password'/>
               <button type="submit" className="btn mt-5 btn-primary w-80">Login</button>
 
             </fieldset>

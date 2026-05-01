@@ -4,7 +4,7 @@ import { FaCircleCheck } from "react-icons/fa6";
 const TechniquesTips = () => {
   return (
     <div className="mt-10">
-        <h1 className="text-3xl font-bold text-center mb-10"><span className="border-b-2 pb-2">Study Techniques & Time Management Tips</span></h1>
+        <h1 className="text-3xl font-bold text-center mb-10">Study Techniques &<br /> <span className="border-b-2 pb-2">Time Management Tips</span></h1>
       <div className="grid grid-cols-2  max-w-5xl mx-auto place-items-center">
         <div className="card w-96 bg-[#DADBDD] shadow-sm py-5">
           <div className="card-body">
