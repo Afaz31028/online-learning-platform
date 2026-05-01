@@ -21,7 +21,11 @@ const SignUpPage = () => {
             password
         });
         if(!error){
-            router.push('/signin')
+            // router.push('/signin')
+            console.log(data)
+        }
+        else{
+          console.log("Error Found", error)
         }
   };
 

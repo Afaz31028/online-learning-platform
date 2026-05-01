@@ -1,10 +1,8 @@
 'use client'
 import { authClient } from '@/lib/auth-client';
-import { useRouter } from 'next/navigation';
 import React from 'react';
 
 const SignInPage = () => {
-    const router = useRouter();
     const onSubmit = async(e) => {
         e.preventDefault();
 
@@ -15,9 +13,9 @@ const SignInPage = () => {
             email,
             password
         });
-        // if(!error){
-        //     router.push('/')
-        // }
+        if(!error){
+            router.push('/')
+        }
   };
 
     return (
