@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import img1 from "@/assests/c-1.jpg";
+import Link from "next/link";
 
 const PopularInstructor = async() => {
     const res= await fetch('https://online-learning-platform-psi-peach.vercel.app/instructor.json', {cache: "no-store"});
@@ -11,18 +12,19 @@ const PopularInstructor = async() => {
         <div className="grid grid-cols-3 gap-8 mt-10 place-items-center container mx-auto">
             {
                 instructors?.map(instructor=> (<div key={instructor.id} className="card bg-base-100 w-96 shadow-sm">
-        <figure className="relative w-100 h-80">
+        <figure className="flex items-center">
           <Image
             src={instructor.image}
-            alt="Shoes" fill
-           className="object-cover"
+            alt={instructor.name} 
+            width={300}
+            height={250}
           />
         </figure>
         <div className="card-body">
           <h2 className="card-title text-xl font-bold">{instructor.name}</h2>
           <p><span className="bg-blue-500 text-lg text-gray-200 font-semibold rounded-xl px-2 py-1">Experience: {instructor.experience}+</span></p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">View Profile</button>
+            <Link href={`/all-courses/${instructor.id}/instructor`}><button className="btn btn-primary">View Profile</button></Link>
           </div>
         </div>
       </div>))

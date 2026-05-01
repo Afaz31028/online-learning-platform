@@ -48,8 +48,8 @@ const Navbar = () => {
         </ul>
         </div>
         <div className="navbar-end flex gap-5">
-          <Link href={"/"}><button className="btn btn-primary">Sign In</button></Link>
-          <Link href={"/"}><button className="btn btn-primary">Sign Up</button></Link>
+          <Link href={"/signin"}><button className="btn btn-primary">Sign In</button></Link>
+          <Link href={"/signup"}><button className="btn btn-primary">Sign Up</button></Link>
         </div>
       </div>
       <div className="collapse-content lg:hidden z-1">
