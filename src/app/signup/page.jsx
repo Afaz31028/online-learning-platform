@@ -38,7 +38,7 @@ const SignUpPage = () => {
               <input name="name" type="text" required className="input" placeholder="Enter a User Name" />
 
               <label className="label font-bold text-neutral">Image Url</label>
-              <input name="image" type="text" required className="input" placeholder="Image URL" />
+              <input name="image" type="text" required className="input" placeholder="Provide a Image URL" />
 
               <label className="label font-bold text-neutral">Email</label>
               <input name="email" type="email" required className="input" placeholder="Enter Your Email"/>
