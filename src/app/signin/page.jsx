@@ -22,7 +22,7 @@ const SignInPage = () => {
 
     return (
     <div className="px-30 pt-25 pb-65">
-      <h1 className="text-center text-2xl font-bold text-green-700">Login Your Account</h1>
+      <h1 className="text-center text-2xl font-bold text-green-700">Login Your Account!</h1>
 
       <div className="flex justify-center mt-4">
         <div className="card bg-base-100 w-full max-w-sm shadow-2xl">
