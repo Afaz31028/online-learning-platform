@@ -8,7 +8,7 @@ const Course = ({ children }) => {
             <div>
                 <SideBar></SideBar>
             </div>
-            <div className='flex justify-center mt-10'>
+            <div className='flex justify-center mt-20'>
                 {children}
             </div>
         </div>

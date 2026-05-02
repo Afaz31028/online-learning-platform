@@ -16,13 +16,13 @@ const ProfilePage = () => {
     }
 
   return (
-    <div className="max-w-full flex justify-center mt-15 mb-25">
+    <div className="max-w-full flex justify-center pt-15 pb-25">
       <div>
         <h1 className="text-2xl font-bold text-center mt-5">
           <span className="border-b-2 pb-2">My profile</span>
         </h1>
-        <div className="bg-gray-200 p-5 mt-10">
-          <div className="relative mt-10 mx-auto h-50 w-50 overflow-hidden rounded-full border-4 border-red-600 shadow-lg">
+        <div className="shadow-lg shadow-gray-900 rounded-2xl p-5 mt-10">
+          <div className="relative mt-10 mx-auto h-50 w-50 overflow-hidden rounded-full border-4 border-black shadow-lg">
             <Image
               src={curUser?.image}
               alt="User Image"
@@ -36,7 +36,7 @@ const ProfilePage = () => {
             <h1 className="text-xl font-bold mt-8">
               {curUser?.name || "User Name"}
             </h1>
-            <h1 className="text-lg font-semibold mt-1">
+            <h1 className="text-lg text-[#672d06] font-semibold mt-1">
               Email: {curUser?.email || "example@gmail.com"}
             </h1>
             <div className="mt-8 pb-5">

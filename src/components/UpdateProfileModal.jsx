@@ -35,7 +35,7 @@ const UpdateProfileModal = () => {
       </button>
       <div className="relative">
         <dialog id="my_modal_5" className="modal sm:modal-middle">
-          <div className="modal-box absolute top-35 left-150 p-20">
+          <div className="modal-box absolute top-40 left-150 p-20">
             <h1 className="text-xl font-bold mt-5">Update Profile</h1>
             <div className="flex justify-center mt-5">
               <form onSubmit={onSubmit}>

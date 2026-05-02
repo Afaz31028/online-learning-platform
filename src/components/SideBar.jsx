@@ -21,7 +21,7 @@ const SideBar = () => {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="menu bg-gray-600 min-h-full w-80 p-4 text-white">
+        <ul className="menu bg-[#0c5d4a] min-h-full w-80 p-4 text-white">
           {/* Sidebar content here */}
           <li>
             <Link className={`text-lg font-bold ${pathName=== `/all-courses/${courseId}` ? 'text-amber-500  px-3 py-2' : ""}`} href={`/all-courses/${courseId}`}>Course Details</Link>

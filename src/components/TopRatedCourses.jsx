@@ -6,7 +6,7 @@ const TopRatedCourses = async () => {
   const courses = await res.json();
   const topCourses = courses.slice(0, 3);
   return (
-    <div className="my-25">
+    <div className="my-25 max-w-7xl mx-auto">
         <h1 className="text-3xl font-bold text-center mt-5"><span className="border-b-2 pb-2">Popular Courses</span></h1>
         <div className="grid grid-cols-3 gap-5 mt-12 place-items-center container mx-auto">
             {

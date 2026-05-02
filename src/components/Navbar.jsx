@@ -24,7 +24,7 @@ const Navbar = () => {
   
 
   return (
-    <div className="max-lg:collapse bg-base-200 shadow-lg w-full rounded-md px-15 py-2">
+    <div className="max-lg:collapse bg-[#a3bfcd] shadow-lg w-full rounded-md px-15 py-2">
       <input id="navbar-1-toggle" className="peer hidden" type="checkbox" />
       <label
         htmlFor="navbar-1-toggle"
@@ -72,7 +72,7 @@ const Navbar = () => {
                      <Link href={"/profile"}> <Image src={curUser?.image} alt={curUser?.name[0]} width={100} height={100}></Image></Link>
                   </div>
               </div>
-              <button onClick={handleLogout} className="btn text-white bg-red-500">Sign Out</button>
+              <button onClick={handleLogout} className="btn text-white bg-red-500">Logout</button>
             </div> 
             : 
             <div className="flex gap-5"> 
