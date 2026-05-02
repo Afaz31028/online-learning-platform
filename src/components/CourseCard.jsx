@@ -6,7 +6,7 @@ import Link from "next/link";
 const CourseCard = ({ course }) => {
   const { id, image, title, instructor, rating } = course;
   return (
-    <div className="p-5 rounded-xl bg-base-100 w-96 shadow-sm ">
+    <div className="p-5 rounded-xl bg-base-100 w-96 shadow-lg ">
       <div className="mx-auto relative w-80 h-60">
         <Image
             className="rounded-xl object-cover"

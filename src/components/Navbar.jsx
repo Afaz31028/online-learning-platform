@@ -1,38 +1,30 @@
 "use client";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { redirect, usePathname } from "next/navigation";
 import React from "react";
 import { authClient } from "@/lib/auth-client"
-import Image from "next/image";
-import img from '@/assests/c-1.jpg'
 import { toast } from "react-toastify";
+import Image from "next/image";
 
 const Navbar = () => {
   const pathName = usePathname();
+  const userData = authClient.useSession() 
 
-  const { 
-        data: session, 
-        isPending,
-    } = authClient.useSession() 
+    const curUser=userData.data?.user;
 
-    const curUser=session?.user;
-    const name = curUser?.name;
-    const image = curUser?.image;
-
-    // console.log(name)
-
-    if (isPending) {
+    if (userData?.isPending) {
       return <div>Loading...</div>;
     }
 
     const handleLogout=()=>{
         toast.success("You Logged Out!", {theme:"dark", autoClose:3000})
         authClient.signOut();
+        redirect("/")
     }
   
 
   return (
-    <div className="max-lg:collapse bg-base-200 shadow-sm w-full rounded-md px-15 py-2">
+    <div className="max-lg:collapse bg-base-200 shadow-lg w-full rounded-md px-15 py-2">
       <input id="navbar-1-toggle" className="peer hidden" type="checkbox" />
       <label
         htmlFor="navbar-1-toggle"
@@ -75,7 +67,11 @@ const Navbar = () => {
           {
             curUser ? 
             <div className="flex gap-5 items-center">
-              <h1 className="text-lg font-semibold">{curUser?.name || "User"}</h1>
+              <div className="avatar">
+                  <div className="w-12 rounded-full">
+                     <Link href={"/profile"}> <Image src={curUser?.image} alt={curUser?.name[0]} width={100} height={100}></Image></Link>
+                  </div>
+              </div>
               <button onClick={handleLogout} className="btn text-white bg-red-500">Sign Out</button>
             </div> 
             : 
