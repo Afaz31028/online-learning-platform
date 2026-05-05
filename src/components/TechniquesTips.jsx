@@ -6,8 +6,8 @@ const TechniquesTips = () => {
   return (
     <div className="mt-20">
         <h1 className="text-3xl font-bold text-center mb-20">Study Techniques &<br /> <span className="border-b-2 pb-2">Time Management Tips</span></h1>
-      <div className="grid grid-cols-2  max-w-5xl mx-auto place-items-center">
-        <motion.div whileHover={{scale:1.25}} whileTap={{scale: 0.75}} className="card w-96 shadow-lg shadow-red-700 py-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-full md:max-w-5xl px-5 gap-8 md:gap-0 md:px-0 mx-auto place-items-center">
+        <motion.div whileHover={{scale:1.25}} whileTap={{scale: 0.75}} className="card w-full md:w-96 shadow-lg shadow-red-700 py-6">
           <div className="card-body">
             <h1 className="text-xl font-bold">Some Important Study Techniques</h1>
             <ul className="mt-4 flex flex-col gap-2 text-xs">
@@ -38,7 +38,7 @@ const TechniquesTips = () => {
             </ul>
           </div>
         </motion.div>
-        <motion.div whileHover={{scale:1.25}} whileTap={{scale: 0.75}} className="card w-96 shadow-red-700 shadow-lg py-5">
+        <motion.div whileHover={{scale:1.25}} whileTap={{scale: 0.75}} className="card w-full md:w-96 shadow-red-700 shadow-lg py-5">
           <div className="card-body">
             <h1 className="text-xl font-bold">Time Management Tips</h1>
             <ul className="mt-4 flex flex-col gap-2 text-xs">

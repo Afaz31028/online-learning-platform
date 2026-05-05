@@ -5,79 +5,84 @@ import { MdEmail, MdOutlineFacebook } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="bg-black text-white px-40">
-      <div className="flex justify-between pt-15">
+    <div className="bg-black text-white px-5 md:px-50">
+      <div className="flex flex-col md:flex-row gap-10 md:gap-80 pt-15 text-center md:text-start">
         <div>
           <h1 className="text-xl font-bold">
             <span className="text-5xl text-amber-500">S</span>kill
             <span className="text-cyan-300">Sphere</span>
           </h1>
-          <p className="mt-3">
+          <p className="mt-3 text-sm">
             Master in-demand skills like Web Development,
             <br /> Python, Graphic Design, and Digital Marketing <br /> — all in
             one place
           </p>
-          <ul className="">
+          <ul className="flex flex-col text-sm justify-center items-center md:items-start">
             <div className="flex gap-2 items-center mt-5">
               <IoCall className="text-red-500" />
               <li>031-234567</li>
             </div>
-            <div className="flex gap-2 items-center mt-3">
+            <div className="flex gap-2 items-center mt-1 md:mt-3">
               <MdEmail className="text-orange-600" />
               <li>skillsphere@gamil.com</li>
             </div>
-            <div className="flex gap-2 items-center mt-3">
+            <div className="flex gap-2 items-center mt-1 md:mt-3">
               <IoLocation className="text-red-500" />
-              <li>
-                Surama R/A, Road-2,
-                <br /> Sylhet Sadar, Sylhet
+              <li>Surama R/A, Road-2, Sylhet Sadar, Sylhet</li>
+            </div>
+          </ul>
+        </div>
+        <div className="flex gap-20 justify-center md:gap-50">
+          <div>
+            <h1 className="text-md md:text-lg font-bold mb-4">Our Services</h1>
+            <ul className="space-y-3 cursor-pointer">
+              <li className="hover:text-amber-500 text-sm">
+                Expert Instructors
               </li>
-            </div>
-          </ul>
-        </div>
-        <div>
-          <h1 className="text-xl font-bold mb-4">Our Services</h1>
-          <ul className="space-y-3 cursor-pointer">
-            <li className="hover:text-amber-500">Expert Instructors</li>
-            <li className="hover:text-amber-500">Community Support</li>
-            <li className="hover:text-amber-500">Dedicated Guidance</li>
-            <li className="hover:text-amber-500">Job Placement</li>
-            <li className="hover:text-amber-500">Certification</li>
-            <li className="hover:text-amber-500">Lifetime Accesss</li>
-          </ul>
-        </div>
-        <div>
-          <h1 className="text-xl font-bold mb-4">Follow Us</h1>
-          <ul className="space-y-3">
-            <div className="flex gap-2 items-center hover:text-cyan-400">
-              <MdOutlineFacebook className="text-xl" />
-              <li>Facebook</li>
-            </div>
-            <div className="flex gap-2 items-center hover:text-cyan-400">
-              <FaLinkedin className="text-xl" />
-              <li>LinkedIn</li>
-            </div>
-            <div className="flex gap-2 items-center hover:text-cyan-400">
-              <FaInstagramSquare className="text-xl" />
-              <li>Instragram</li>
-            </div>
-            <div className="flex gap-2 items-center hover:text-cyan-400">
-              <FaTwitterSquare className="text-xl" />
-              <li>Twitter</li>
-            </div>
-          </ul>
+              <li className="hover:text-amber-500 text-sm">
+                Community Support
+              </li>
+              <li className="hover:text-amber-500 text-sm">
+                Dedicated Guidance
+              </li>
+              <li className="hover:text-amber-500 text-sm">Job Placement</li>
+              <li className="hover:text-amber-500 text-sm">Certification</li>
+              <li className="hover:text-amber-500 text-sm">Lifetime Accesss</li>
+            </ul>
+          </div>
+          <div>
+            <h1 className="text-md md:text-lg font-bold mb-4">Follow Us</h1>
+            <ul className="space-y-3 cursor-pointer">
+              <div className="flex gap-2 items-center text-sm hover:text-cyan-400">
+                <MdOutlineFacebook className="text-xl" />
+                <li>Facebook</li>
+              </div>
+              <div className="flex gap-2 items-center text-sm hover:text-cyan-400">
+                <FaLinkedin className="text-xl" />
+                <li>LinkedIn</li>
+              </div>
+              <div className="flex gap-2 items-center text-sm hover:text-cyan-400">
+                <FaInstagramSquare className="text-xl" />
+                <li>Instragram</li>
+              </div>
+              <div className="flex gap-2 items-center text-sm hover:text-cyan-400">
+                <FaTwitterSquare className="text-xl" />
+                <li>Twitter</li>
+              </div>
+            </ul>
+          </div>
         </div>
       </div>
-      <div className="border-t border-gray-700 mt-10 pt-5 pb-4 flex justify-between items-center">
-        <div>
-            <p>&copy; 2026 skillsphere. All rights reserved.</p>
+      <div className="border-t border-gray-700 mt-10 pt-5 pb-4 flex flex-col md:flex-row justify-between items-center">
+        <div className="text-sm">
+          <p>&copy; 2026 skillsphere. All rights reserved.</p>
         </div>
         <div>
-            <ul className="flex gap-5 items-center">
-                <li>Privacy</li>
-                <li>Terms & Conditions</li>
-                <li>Cookies</li>
-            </ul>
+          <ul className="flex gap-5 items-center text-sm">
+            <li>Privacy</li>
+            <li>Terms & Conditions</li>
+            <li>Cookies</li>
+          </ul>
         </div>
       </div>
     </div>
