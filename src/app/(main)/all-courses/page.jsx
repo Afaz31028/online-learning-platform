@@ -19,11 +19,13 @@ const AllCoursesPage = () => {
       setLoading(false);
     };
     fetchCourses()
+    
   }, []);
 
     const handleSubmit=(e)=>{
       e.preventDefault();
       setSearchText(e.target.search.value);
+      e.target.search.value="";
   }
 
   const filteredCourses = courses.filter((course) =>
@@ -60,15 +62,11 @@ const AllCoursesPage = () => {
         <h1 className="text-3xl font-bold text-center mt-10 mb-5">
           <span className="border-b-2 pb-2">Our All Courses</span>
         </h1>
-        {loading ? (
-          <p>Loading.....</p>
-        ) : (
           <div className="grid grid-cols-3 gap-6">
-            {displayCourses.map((course, index) => (
-              <CourseCard key={index} course={course}></CourseCard>
-            ))}
+            {
+              displayCourses.map((course, index) => <CourseCard key={index} course={course}></CourseCard>
+            )}
           </div>
-        )}
       </div>
     </div>
   );

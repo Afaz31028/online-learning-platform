@@ -28,7 +28,7 @@ const UpdateProfileModal = () => {
   return (
     <div>
       <button
-        className="btn btn-primary"
+        className="btn bg-black text-white"
         onClick={() => document.getElementById("my_modal_5").showModal()}
       >
         Update Profile

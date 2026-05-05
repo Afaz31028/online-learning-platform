@@ -1,27 +1,24 @@
 "use client";
 import Link from "next/link";
-import { redirect, usePathname } from "next/navigation";
-import React from "react";
-import { authClient } from "@/lib/auth-client"
+import { redirect } from "next/navigation";
+import { usePathname } from "next/navigation";
+import React, {useState } from "react";
+import { authClient } from "@/lib/auth-client";
 import { toast } from "react-toastify";
 import Image from "next/image";
 
 const Navbar = () => {
   const pathName = usePathname();
-  const userData = authClient.useSession() 
+  const userData = authClient.useSession();
 
-    const curUser=userData.data?.user;
+  const curUser = userData.data?.user;
 
-    if (userData?.isPending) {
-      return <div>Loading...</div>;
-    }
+  const handleLogout = () => {
+    toast.success("You Logged Out!", { theme: "dark", autoClose: 3000 });
+    authClient.signOut();
+    redirect("/");
+  };
 
-    const handleLogout=()=>{
-        toast.success("You Logged Out!", {theme:"dark", autoClose:3000})
-        authClient.signOut();
-        redirect("/")
-    }
-  
 
   return (
     <div className="max-lg:collapse bg-[#a3bfcd] shadow-lg w-full rounded-md px-15 py-2">
@@ -48,55 +45,120 @@ const Navbar = () => {
               />
             </svg>
           </label>
-          <h1 className="text-2xl font-bold"><span className="text-4xl text-amber-500">S</span>kill<span className="text-cyan-600">Sphere</span></h1>
+          <h1 className="text-2xl font-bold">
+            <span className="text-4xl text-amber-500">S</span>kill
+            <span className="text-cyan-600">Sphere</span>
+          </h1>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="flex gap-5 items-center font-bold">
-          <li>
-            <Link className={pathName==='/' ? 'border-b-2 border-blue-600 text-black px-3 py-2' : ""} href={"/"}>Home</Link>
-          </li>
-          <li>
-            <Link className={pathName==='/all-courses' ? 'border-b-2 border-blue-600 text-black px-3 py-2' : ""} href={"/all-courses"}>All Courses</Link>
-          </li>
-          <li>
-            <Link className={pathName==='/profile' ? 'border-b-2 border-blue-600 text-black px-3 py-2' : ""} href={"/profile"}>My Profile</Link>
-          </li>
-        </ul>
+            <li>
+              <Link
+                className={
+                  pathName === "/"
+                    ? "border-b-2 border-blue-600 text-black px-3 py-2"
+                    : ""
+                }
+                href={"/"}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={
+                  pathName === "/all-courses"
+                    ? "border-b-2 border-blue-600 text-black px-3 py-2"
+                    : ""
+                }
+                href={"/all-courses"}
+              >
+                All Courses
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={
+                  pathName === "/profile"
+                    ? "border-b-2 border-blue-600 text-black px-3 py-2"
+                    : ""
+                }
+                href={"/profile"}
+              >
+                My Profile
+              </Link>
+            </li>
+          </ul>
         </div>
         <div className="navbar-end flex gap-5">
-          {
-            curUser ? 
+          {curUser ? (
             <div className="flex gap-5 items-center">
               <div className="avatar">
-                  <div className="w-12 rounded-full">
-                     <Link href={"/profile"}> <Image src={curUser?.image} alt={curUser?.name[0]} width={100} height={100}></Image></Link>
-                  </div>
+                <div className="w-12 rounded-full">
+                    <Link href={"/profile"}><Image src={curUser?.image} alt={curUser?.name[0]} width={100} height={100}></Image>
+                    </Link>
+                </div>
               </div>
-              <button onClick={handleLogout} className="btn text-white bg-red-500">Logout</button>
-            </div> 
-            : 
-            <div className="flex gap-5"> 
-              <Link href={"/signin"}><button className="btn btn-primary">Sign In</button></Link>
-              <Link href={"/signup"}><button className="btn btn-primary">Sign Up</button></Link>
+              <button
+                onClick={handleLogout}
+                className="btn text-white bg-red-500"
+              >
+                Logout
+              </button>
             </div>
-          }
+          ) : (
+            <div className="flex gap-5">
+              <Link href={"/signin"}>
+                <button className="btn btn-primary">Sign In</button>
+              </Link>
+              <Link href={"/signup"}>
+                <button className="btn btn-primary">Sign Up</button>
+              </Link>
+            </div>
+          )}
         </div>
       </div>
       <div className="collapse-content lg:hidden z-1">
         <ul className="flex gap-5 items-center font-bold">
           <li>
-            <Link className={pathName==='/' ? 'border-b-2 border-blue-600 text-black px-3 py-2 rounded-xl' : ""} href={"/"}>Home</Link>
+            <Link
+              className={
+                pathName === "/"
+                  ? "border-b-2 border-blue-600 text-black px-3 py-2 rounded-xl"
+                  : ""
+              }
+              href={"/"}
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <Link className={pathName==='/all-courses' ? 'border-b-2 border-blue-600 text-black px-3 py-2 rounded-xl' : ""} href={"/all-courses"}>All Courses</Link>
+            <Link
+              className={
+                pathName === "/all-courses"
+                  ? "border-b-2 border-blue-600 text-black px-3 py-2 rounded-xl"
+                  : ""
+              }
+              href={"/all-courses"}
+            >
+              All Courses
+            </Link>
           </li>
           <li>
-            <Link className={pathName==='/profile' ? 'border-b-2 border-blue-600 text-black px-3 py-2 rounded-xl' : ""} href={"/profile"}>My Profile</Link>
+            <Link
+              className={
+                pathName === "/profile"
+                  ? "border-b-2 border-blue-600 text-black px-3 py-2 rounded-xl"
+                  : ""
+              }
+              href={"/profile"}
+            >
+              My Profile
+            </Link>
           </li>
         </ul>
       </div>
     </div>
   );
 };
-
 export default Navbar;
