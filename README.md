@@ -104,13 +104,13 @@ Fully responsive for:
 
 ## 🛡️ Access Control
 
-| Feature             | बिना Login | With Login |
-|--------------------|----------|-----------|
-| Home Page          | ✅        | ✅         |
-| All Courses        | ✅        | ✅         |
-| Course Details     | ❌        | ✅         |
-| Course Curriculum  | ❌        | ✅         |
-| Profile            | ❌        | ✅         |
+| Feature             | Without Login | With Login  |
+|--------------------|----------------|-------------|
+| Home Page          |    ✅          |    ✅       |
+| All Courses        |    ✅          |    ✅       |
+| Course Details     |    ❌          |    ✅       |
+| Course Curriculum  |    ❌          |    ✅       |
+| Profile            |    ❌          |    ✅       |
 
 
 ---
