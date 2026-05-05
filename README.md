@@ -1,36 +1,146 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📚 Online Learning Platform
 
-## Getting Started
+An interactive and fully responsive **Online Learning Platform** built with modern web technologies. Users can explore courses, view instructors, and manage their profiles with secure authentication.
 
-First, run the development server:
+---
 
-```bash
+## 🚀 Tech Stack
+
+- **Frontend:** React.js, Next.js  
+- **Styling:** Tailwind CSS  
+- **Backend/Database:** MongoDB  
+- **Authentication:** Better-Auth (with Google Sign-In)
+
+---
+
+## ✨ Features
+
+### 🌐 Public Access
+- Browse the Home Page without logging in
+- View top courses, instructors, and study tips
+
+### 🔐 Authentication
+- **Sign Up** with:
+  - Name
+  - Email
+  - Image URL
+  - Password
+- **Sign In** with:
+  - Email & Password
+- Google authentication supported
+- Protected routes for course details and curriculum
+
+---
+
+## 🏠 Pages & Structure
+
+### 🔹 Home Page
+- Navbar
+- Banner section
+- Top 3 Courses (card layout)
+- Study Techniques & Tips (2 cards)
+- Popular Instructors (cards)
+- Footer
+
+---
+
+### 📖 All Courses Page
+- Displays all courses
+- Search bar to filter by course title
+- Responsive course card layout
+
+---
+
+### 👤 My Profile
+- Displays:
+  - Profile image
+  - User name
+  - Email
+- Profile update feature:
+  - Opens a modal
+  - Update name and image
+
+---
+
+### 🔑 Authentication Pages
+
+#### Sign In
+- Email
+- Password
+
+#### Sign Up
+- User Name
+- Email
+- Image URL
+- Password
+
+---
+
+## 📘 Course Details System
+
+- Clicking a course redirects to a dynamic layout page
+
+### Layout Structure:
+- **Sidebar:**
+  - Course Details
+  - Instructor Details
+  - Course Curriculum
+
+- **Main Content:**
+  - Dynamically updates based on selected sidebar option
+
+⚠️ Login required to access course details and curriculum.
+
+---
+
+## 📱 Responsiveness
+
+Fully responsive for:
+- Mobile 📱
+- Tablet 📲
+- Desktop 💻
+
+---
+
+## 🛡️ Access Control
+
+| Feature             | बिना Login | With Login |
+|--------------------|----------|-----------|
+| Home Page          | ✅        | ✅         |
+| All Courses        | ✅        | ✅         |
+| Course Details     | ❌        | ✅         |
+| Course Curriculum  | ❌        | ✅         |
+| Profile            | ❌        | ✅         |
+
+
+---
+json
+{
+  "@better-auth/mongo-adapter": "^1.6.9",
+  "animate.css": "^4.1.1",
+  "better-auth": "^1.6.9",
+  "mongodb": "^7.2.0",
+  "motion": "^12.38.0",
+  "next": "16.2.4",
+  "react": "19.2.4",
+  "react-dom": "19.2.4",
+  "react-icons": "^5.6.0",
+  "react-spinner": "^0.2.7",
+  "react-spinners": "^0.17.0",
+  "react-toastify": "^11.1.0"
+}
+---
+
+## 📦 Installation & Setup
+
+# Clone the repository
+git clone [https://github.com/Afaz31028/online-learning-platform.git]
+
+# Go to project folder
+cd online-learning-platform
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
