@@ -6,9 +6,9 @@ const PopularInstructor = async() => {
     const res= await fetch('https://online-learning-platform-psi-peach.vercel.app/instructor.json', {cache: "no-store"});
     const instructors= await res.json();
   return (
-    <div className="my-25 max-w-7xl mx-auto">
+    <div className="my-25 max-w-4xl mx-auto">
         <h1 className="text-3xl font-bold text-center mt-5"><span className="border-b-2 pb-2">Popular Instructors</span></h1>
-        <div className="grid grid-cols-3 gap-8 mt-20 place-items-center container mx-auto">
+        <div className="grid grid-cols-2 gap-8 mt-20 place-items-center container mx-auto">
             {
                 instructors?.map(instructor=> (<div key={instructor.id} className="card text-white pt-5 pb-8 bg-gray-300 w-80 shadow-lg shadow-red-500">
         <div className="mx-auto relative w-70 h-50">

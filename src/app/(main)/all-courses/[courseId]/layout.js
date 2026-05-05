@@ -5,7 +5,7 @@ import React from 'react';
 const Course = ({ children }) => {
     return (
         <div className='flex gap-60'>
-            <div>
+            <div className=''>
                 <SideBar></SideBar>
             </div>
             <div className='flex justify-center mt-20'>

@@ -46,20 +46,6 @@
   },
   {
     "id": 4,
-    "name": "Fazle Rabbi",
-    "courses": [
-      "Data Science with Python"
-    ],
-    "experience": "6 years",
-    "achievement": "Data analyst for multiple global companies",
-    "rating": 4.8,
-    "bio": "Helping learners turn data into insights and build ML models.",
-    "email": "rabbi@example.com",
-     "contact": "01887-908070",
-    "image": "https://res.cloudinary.com/dpi4wnosa/image/upload/v1777631615/download_dvtn14.jpg"
-  },
-  {
-    "id": 5,
     "name": "Safiul Hasan",
     "courses": [
       "Digital Marketing Essentials"

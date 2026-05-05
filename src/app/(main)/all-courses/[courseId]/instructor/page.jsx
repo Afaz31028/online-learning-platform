@@ -10,6 +10,7 @@ const InstructorPage = async ({ params }) => {
     { cache: "no-store" },
   );
   const instructors = await res.json();
+  
   const filteredInstructor = instructors?.find(
     (instructor) => instructor.id == courseId,
   );
