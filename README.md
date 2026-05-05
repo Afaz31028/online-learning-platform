@@ -6,7 +6,7 @@ An interactive and fully responsive **Online Learning Platform** built with mode
 
 ## 🔗 Live Demo
 
-👉 (https://online-learning-platform-psi-peach.vercel.app/)
+👉 [https://online-learning-platform-psi-peach.vercel.app/]
 
 ---
 
