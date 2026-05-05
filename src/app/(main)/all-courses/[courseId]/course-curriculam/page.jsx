@@ -144,12 +144,12 @@ const CourseCurriculamPage = async({params}) => {
     const len=courseCur.data.length;
 
     return (
-        <div className=''>
-            <div className='text-center ml-50'>
-                <h1 className='text-2xl font-bold'>{courseCur.title}</h1>
+        <div className='w-full pb-10'>
+            <div className='text-center px-5 md:px-0 md:ml-50'>
+                <h1 className='text-2xl text-green-700 font-bold'>{courseCur.title}</h1>
                 <h1 className='border-b p-1 text-lg font-bold mt-5'>Course Curriculam</h1>
             </div>
-            <div className='my-15'>
+            <div className='my-15 px-5'>
                {
                     courseCur.data.map((module, index)=> <CurriculamDetails key={index} module={module} len={len} id={index} />)
                }

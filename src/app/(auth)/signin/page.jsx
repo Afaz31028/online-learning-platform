@@ -40,10 +40,10 @@ const SignInPage = () => {
   };
 
     return (
-    <div className="px-30 pt-25 pb-65">
+    <div className="px-8 py-10 md:px-30 md:pt-25 md:pb-65">
       <div className="flex justify-center mt-4">
         <div className="card bg-base-100 w-full max-w-sm shadow-2xl">
-          <div className='h-16 bg-blue-800 rounded-t-2xl pt-5'><h1 className="text-center text-2xl font-bold text-white">Login Your Account!</h1></div>
+          <div className='h-16 bg-blue-800 rounded-t-2xl pt-5'><h1 className="text-center text-lg md:text-2xl font-bold text-white">Login Your Account!</h1></div>
           <form onSubmit={onSubmit} className="mx-auto mt-8">
             <fieldset className="fieldset">
 
@@ -52,7 +52,7 @@ const SignInPage = () => {
 
               <label className="label mt-2 font-bold text-neutral">Password</label>
               <input name="password" type="password" required className="input" placeholder='Enter Correct Password'/>
-              <button type="submit" className="btn mt-6 bg-[#1b55d3] w-80 text-white">Login</button>
+              <button type="submit" className="btn mt-6 bg-[#1b55d3] w-60 md:w-80 text-white">Login</button>
 
             </fieldset>
           </form>
@@ -65,7 +65,7 @@ const SignInPage = () => {
                     </button>
             </div>
           </div>
-          <div className='mt-10 h-15 bg-blue-800 rounded-b-2xl pt-5 text-center text-white'><p>Don't have an account?  <Link className='text-lg font-bold text-warning' href={"/signup"}>Register</Link></p></div>
+          <div className='mt-10 h-15 bg-blue-800 rounded-b-2xl pt-5 text-center text-white'><p>Don't have an account?  <Link className=' text-sm md:text-lg font-bold text-warning' href={"/signup"}>Register</Link></p></div>
         </div>
       </div>
     </div>

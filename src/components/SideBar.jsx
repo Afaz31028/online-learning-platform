@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 import React from "react";
+import { IoMenu } from "react-icons/io5";
 
 const SideBar = () => {
     const {courseId} = useParams();
@@ -11,8 +12,8 @@ const SideBar = () => {
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col items-center justify-center">
         {/* Page content here */}
-        <label htmlFor="my-drawer-3" className="btn drawer-button lg:hidden">
-          Open drawer
+        <label htmlFor="my-drawer-3" className="btn bg-black mt-3 drawer-button lg:hidden">
+          <IoMenu className=" text-white" />
         </label>
       </div>
       <div className="drawer-side">

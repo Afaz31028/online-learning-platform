@@ -35,7 +35,7 @@ const AllCoursesPage = () => {
 
   return (
     <div>
-      <div className="flex justify-center mt-15">
+      <div className="flex justify-center mt-15 px-5 md:px-0">
         <div className="join flex">
           <div className="flex ">
             <div className="border-2 border-green-700">
@@ -58,11 +58,11 @@ const AllCoursesPage = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto mb-10 pt-10 pb-20">
+      <div className=" w-full md:max-w-7xl mx-auto px-5 mb-10 pt-10 pb-20">
         <h1 className="text-3xl font-bold text-center mt-10 mb-5">
           <span className="border-b-2 pb-2">Our All Courses</span>
         </h1>
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {
               displayCourses.map((course, index) => <CourseCard key={index} course={course}></CourseCard>
             )}

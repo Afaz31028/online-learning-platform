@@ -4,7 +4,7 @@ import React from 'react';
 
 const Course = ({ children }) => {
     return (
-        <div className='flex gap-60'>
+        <div className='flex md:gap-40'>
             <div className=''>
                 <SideBar></SideBar>
             </div>

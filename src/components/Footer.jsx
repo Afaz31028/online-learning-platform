@@ -5,8 +5,8 @@ import { MdEmail, MdOutlineFacebook } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="bg-black text-white px-5 md:px-50">
-      <div className="flex flex-col md:flex-row gap-10 md:gap-80 pt-15 text-center md:text-start">
+    <div className="bg-black w-full text-white px-5 md:px-50">
+      <div className="flex flex-col md:flex-row justify-between pt-15 text-center md:text-start">
         <div>
           <h1 className="text-xl font-bold">
             <span className="text-5xl text-amber-500">S</span>kill
@@ -32,10 +32,9 @@ const Footer = () => {
             </div>
           </ul>
         </div>
-        <div className="flex gap-20 justify-center md:gap-50">
           <div>
-            <h1 className="text-md md:text-lg font-bold mb-4">Our Services</h1>
-            <ul className="space-y-3 cursor-pointer">
+            <h1 className="text-md md:text-lg font-bold mb-2 mt-5 md:mt-0 md:mb-4">Our Services</h1>
+            <ul className="space-y-1 md:space-y-3 cursor-pointer">
               <li className="hover:text-amber-500 text-sm">
                 Expert Instructors
               </li>
@@ -51,8 +50,9 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h1 className="text-md md:text-lg font-bold mb-4">Follow Us</h1>
-            <ul className="space-y-3 cursor-pointer">
+            <h1 className="text-md md:text-lg font-bold mt-5 md:mt-0 mb-2 md:mb-4">Follow Us</h1>
+            <div className="flex justify-center">
+              <ul className="space-y-1 md:space-y-3 cursor-pointer text-center">
               <div className="flex gap-2 items-center text-sm hover:text-cyan-400">
                 <MdOutlineFacebook className="text-xl" />
                 <li>Facebook</li>
@@ -70,15 +70,15 @@ const Footer = () => {
                 <li>Twitter</li>
               </div>
             </ul>
+            </div>
           </div>
-        </div>
       </div>
       <div className="border-t border-gray-700 mt-10 pt-5 pb-4 flex flex-col md:flex-row justify-between items-center">
         <div className="text-sm">
           <p>&copy; 2026 skillsphere. All rights reserved.</p>
         </div>
         <div>
-          <ul className="flex gap-5 items-center text-sm">
+          <ul className="flex mt-3 md:mt-0 gap-5 items-center text-sm">
             <li>Privacy</li>
             <li>Terms & Conditions</li>
             <li>Cookies</li>

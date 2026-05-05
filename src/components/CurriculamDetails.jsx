@@ -5,7 +5,7 @@ const CurriculamDetails = ({ module, len, id }) => {
   return (
     <>
       { id < len-1 ? (
-        <div className="ml-50 font-bold">
+        <div className="md:ml-50 font-bold text-sm md:text-md">
           <div className="flex gap-3 items-center">
             <p className="w-5 h-5 rounded-full bg-red-600"></p>
             <p>{module}</p>
@@ -14,7 +14,7 @@ const CurriculamDetails = ({ module, len, id }) => {
         </div>
         
       ) : (
-        <div className="ml-50 font-bold">
+        <div className="md:ml-50 font-bold text-sm md:text-md">
           <div className="flex gap-3 items-center">
             <p className="w-5 h-5 rounded-full bg-red-600"></p>
             <p>{module}</p>

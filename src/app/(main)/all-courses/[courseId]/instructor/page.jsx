@@ -28,13 +28,13 @@ const InstructorPage = async ({ params }) => {
     courses,
   } = filteredInstructor;
   return (
-    <div className="max-w-4xl h-150 mx-auto">
+    <div className="w-full md:max-w-4xl h-150 mx-auto p-5">
       <h1 className="text-3xl font-bold text-center mt-5 mb-10">
         <span className="border-b-2 pb-2">Instructor Profile</span>
       </h1>
-      <div className="flex gap-3">
+      <div className="flex flex-col md:flex-row gap-3">
         <div className=" bg-gray-200 p-5">
-          <div className="relative w-80 h-70">
+          <div className="relative w-full md:w-80 h-70">
             <Image
               className="object-center"
               src={image}
@@ -50,7 +50,7 @@ const InstructorPage = async ({ params }) => {
             <p className="mt-3 text-lg font-semibold">Rating: {rating}</p>
           </div>
         </div>
-        <div className="bg-gray-200 p-5">
+        <div className="bg-gray-200  p-5">
             <p><span className="border-b text-lg font-semibold">Achievemnets:</span></p>
             <p className="text-lg font-semibold">{achievement}</p>
             <p className="mt-5"><span className="border-b text-lg font-semibold">Objectives:</span></p>
