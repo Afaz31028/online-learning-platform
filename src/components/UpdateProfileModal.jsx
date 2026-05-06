@@ -33,9 +33,9 @@ const UpdateProfileModal = () => {
       >
         Update Profile
       </button>
-      <div className="relative">
+      <div className="relative pr-5">
         <dialog id="my_modal_5" className="modal sm:modal-middle">
-          <div className="modal-box absolute top-40 left-150 p-20">
+          <div className="modal-box w-full md:w-100 top-0 left-5 absolute md:top-30 md:left-60 lg:left-150 lg:p-20">
             <h1 className="text-xl font-bold mt-5">Update Profile</h1>
             <div className="flex justify-center mt-5">
               <form onSubmit={onSubmit}>
@@ -58,7 +58,7 @@ const UpdateProfileModal = () => {
                   />
                   <button
                     type="submit"
-                    className="btn mt-8 btn-primary rounded-4xl w-80"
+                    className="btn mt-8 btn-primary rounded-4xl w-full md:w-60"
                   >
                     Update
                   </button>

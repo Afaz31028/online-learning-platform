@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { usePathname } from "next/navigation";
-import React, { useState } from "react";
+import React from "react";
 import { authClient } from "@/lib/auth-client";
 import { toast } from "react-toastify";
 import Image from "next/image";
@@ -39,14 +39,23 @@ const Navbar = () => {
                 className={pathName === "/profile" ? "border-b-2 border-blue-600 text-black px-3 py-2" : ""} href={"/profile"}>My Profile
               </Link>
             </li>
-            <li><Link
-                className={pathName === "/signin" ? "md:border-b-2 md:border-blue-600 md:text-black px-3 py-2 text-amber-600" : ""} href={"/signin"}>Sign In
-              </Link>
-            </li>
-            <li><Link
-                className={pathName === "/Signup" ? "md:border-b-2 md:border-blue-600 md:text-black px-3 py-2 text-amber-600" : ""} href={"/signup"}>Sign Up
-              </Link>
-            </li>
+           {
+              curUser ? 
+                    <li>
+                      <button onClick={handleLogout} className="btn bg-red-600 text-white w-full mt-3" >Logout</button>
+                    </li> 
+                :
+                    <div className="flex justify-between items-center mt-3">
+                      <li><Link href={"/signin"}>
+                            <button className="btn btn-info">Sign In</button>
+                          </Link>
+                      </li>
+                    <li><Link href={"/signup"}>
+                          <button className="btn btn-info">Sign Up</button>
+                        </Link>
+                    </li>
+              </div>
+           }
           </ul>
     </div>
    <h1 className="md:text-2xl text-lg font-bold"><span className="text-4xl text-amber-500">S</span>kill<span className="text-cyan-600">Sphere</span></h1>

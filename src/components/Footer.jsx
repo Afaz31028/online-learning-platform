@@ -5,8 +5,8 @@ import { MdEmail, MdOutlineFacebook } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="bg-black w-full text-white px-5 md:px-50">
-      <div className="flex flex-col md:flex-row justify-between pt-15 text-center md:text-start">
+    <div className="bg-black w-full text-white px-5 md:px-10 lg:px-50">
+      <div className="flex flex-col md:flex-row justify-between px-2 md:px-0 pt-15 text-start">
         <div>
           <h1 className="text-xl font-bold">
             <span className="text-5xl text-amber-500">S</span>kill
@@ -17,7 +17,7 @@ const Footer = () => {
             <br /> Python, Graphic Design, and Digital Marketing <br /> — all in
             one place
           </p>
-          <ul className="flex flex-col text-sm justify-center items-center md:items-start">
+          <ul className="flex flex-col text-sm justify-center items-start">
             <div className="flex gap-2 items-center mt-5">
               <IoCall className="text-red-500" />
               <li>031-234567</li>
@@ -51,7 +51,7 @@ const Footer = () => {
           </div>
           <div>
             <h1 className="text-md md:text-lg font-bold mt-5 md:mt-0 mb-2 md:mb-4">Follow Us</h1>
-            <div className="flex justify-center">
+            <div className="">
               <ul className="space-y-1 md:space-y-3 cursor-pointer text-center">
               <div className="flex gap-2 items-center text-sm hover:text-cyan-400">
                 <MdOutlineFacebook className="text-xl" />

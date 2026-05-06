@@ -2,7 +2,7 @@ import CurriculamDetails from '@/components/CurriculamDetails';
 import React from 'react';
 const CourseCurriculamPage = async({params}) => {
     const {courseId} = await params;
-    console.log(courseId)
+    // console.log(courseId)
 
     const courseCurriculam=[
         {
@@ -140,19 +140,22 @@ const CourseCurriculamPage = async({params}) => {
     ]
 
     const courseCur= courseCurriculam.find(course=> course.id==courseId);
+    const displayModules= courseCur.data.slice(0,5);
     // console.log(courseCur)
-    const len=courseCur.data.length;
-
+    const len=displayModules.length
     return (
         <div className='w-full pb-10'>
-            <div className='text-center px-5 md:px-0 md:ml-50'>
+            <div className='text-center px-5 lg:px-0 lg:ml-50'>
                 <h1 className='text-2xl text-green-700 font-bold'>{courseCur.title}</h1>
                 <h1 className='border-b p-1 text-lg font-bold mt-5'>Course Curriculam</h1>
             </div>
             <div className='my-15 px-5'>
                {
-                    courseCur.data.map((module, index)=> <CurriculamDetails key={index} module={module} len={len} id={index} />)
+                    displayModules.map((module, index)=> <CurriculamDetails key={index} module={module} len={len} id={index}/>)
                }
+            </div>
+            <div className='flex justify-center'>
+                <button className='btn bg-green-800 text-white'>Next Modules</button>
             </div>
         </div>
     );

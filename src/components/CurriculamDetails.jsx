@@ -1,11 +1,11 @@
 import React from "react";
 
 const CurriculamDetails = ({ module, len, id }) => {
-    console.log(len,id)
+    // console.log(len,id)
   return (
     <>
       { id < len-1 ? (
-        <div className="md:ml-50 font-bold text-sm md:text-md">
+        <div className=" md:ml-20 lg:ml-50 font-bold text-sm md:text-md">
           <div className="flex gap-3 items-center">
             <p className="w-5 h-5 rounded-full bg-red-600"></p>
             <p>{module}</p>
@@ -14,7 +14,7 @@ const CurriculamDetails = ({ module, len, id }) => {
         </div>
         
       ) : (
-        <div className="md:ml-50 font-bold text-sm md:text-md">
+        <div className="md:ml-20 lg:ml-50 font-bold text-sm md:text-md">
           <div className="flex gap-3 items-center">
             <p className="w-5 h-5 rounded-full bg-red-600"></p>
             <p>{module}</p>
