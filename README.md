@@ -6,13 +6,13 @@ An interactive and fully responsive **Online Learning Platform** built with mode
 
 ## 🔗 Live Demo
 
-👉 [https://online-learning-platform-psi-peach.vercel.app/]
+https://online-learning-platform-psi-peach.vercel.app/
 
 ---
 
 ## 🚀 Tech Stack
 
-- **Frontend:** React.js, Next.js  
+- **Frontend:** Daisy.ui React.js, Next.js  
 - **Styling:** Tailwind CSS  
 - **Backend/Database:** MongoDB  
 - **Authentication:** Better-Auth (with Google Sign-In)
