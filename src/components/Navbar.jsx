@@ -36,7 +36,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li><Link
-                className={pathName === "/profile" ? "border-b-2 border-blue-600 text-black px-3 py-2" : ""} href={"/profile"}>My Profile
+                className={pathName === "/profile" ? "border-b-2 border-blue-600 text-black px-3 py-2" : ""} href={"/profile"}>My 1Profile
               </Link>
             </li>
            {
